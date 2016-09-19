@@ -1,7 +1,10 @@
-<h1>cm dabao website</h1><br>
+{% extends "main/base.html" %}
+{% block content %}
 
 <form action="/submit" method="POST">{% csrf_token %}
 UserName: <input type="text" name="user"><br>
 PassWord: <input type="password" name="pwd">
-<input type="submit" value="kai shi da bao">
+<input type="submit" value="开始打包">
 </form>
+
+{% endblock %}
